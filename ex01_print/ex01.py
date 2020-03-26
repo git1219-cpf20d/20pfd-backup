@@ -5,4 +5,10 @@
 # 각자 Study drills 시도 후 필요시 commit / Try Study Drills and commit if necessary
 # print 'abc' -> print('abc')
 
-print("Hello World")
+print("Hello World!")
+print("Hello Again")
+print("I like typing this.")
+print("This is fun.")
+print('yay! Printing.')
+print("I'd much rather you 'not'.")
+print('I "said" do not touch this.')
