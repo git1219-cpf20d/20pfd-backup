@@ -9,6 +9,7 @@
 # print 'abc', -> print('abc', end=" ")
 
 formatter = "{} {} {} {}"
+formatter2 = "%r %r %r %r"
 
 print(formatter.format(1, 2, 3, 4))
 print(formatter.format("one", "two", "three", "four"))
@@ -20,3 +21,5 @@ print(formatter.format(
   "Maybe a poem",
   "Or a song about fear"
 ))
+
+print(formatter2 % (5, 6, 7, 8))
