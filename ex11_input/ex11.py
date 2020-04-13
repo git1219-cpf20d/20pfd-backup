@@ -12,3 +12,13 @@
 # 프로그램 실행 후 대기상태이면 키보드로 입력하고 Enter /
 # After starting the program, when it waits, enter a string and press Enter
 # https://youtu.be/BKbmzJ5rSE4
+
+# -*- coding: utf-8 -*-
+print("몇 살이죠?", end=' ')
+나이 = input()
+print("키는 얼마죠?", end=' ')
+키 = input()
+print("몸무게는 얼마죠?", end=' ')
+몸무게 = input()
+
+print(f"네, 나이는 {나이}살, 키는 {키}cm, 몸무게는 {몸무게}kg 이네요.\a")
