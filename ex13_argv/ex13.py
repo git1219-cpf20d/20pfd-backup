@@ -9,3 +9,18 @@
 # print 'abc', abc, 'def' -> print('abc %s def' % (abc))
 # print 'abc', -> print('abc', end=" ")
 # 이 예제는 command-line 에서 실행시킬 것 / Please run this from the command-line
+import sys
+
+print("sys.argv =", sys.argv)
+스크립트, 첫_번째, 두_번째, 세_번째 = sys.argv
+
+print(
+  (
+    "스크립트 이름: %s\n"
+    "첫_번째 변수: %s\n"
+    "두_번째 변수: %s\n"
+    "세_번째 변수: %s"
+  ) % (
+    스크립트, 첫_번째, 두_번째, 세_번째
+  )
+)
