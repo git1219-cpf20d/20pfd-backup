@@ -9,3 +9,19 @@
 # print 'abc', -> print('abc', end=" ")
 # raw_input('abc') -> input('abc')
 # 이 예제는 command-line 에서 실행시킬 것 / Please run this from the command-line
+# -*- coding: utf-8 -*-
+
+from sys import argv
+
+script, filename = argv
+
+with open(filename, encoding='utf-8') as txt:
+  print("여기 너의 파일 %r:" % filename)
+  print(txt.read())
+
+print("파일 이름을 다시 써줘:")
+file_again = input("> ")
+
+with open(file_again, encoding='utf-8') as txt_again:
+  print(txt_again.read())
+  
