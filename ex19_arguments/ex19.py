@@ -9,24 +9,27 @@
 # print 'abc', -> print('abc', end=" ")
 # raw_input('abc') -> input('abc')
 
-def cheese_and_crackers(cheese_count, boxes_of_crackers):
-  print('치즈가 %d 개 있어요!' % cheese_count)
-  print('크래커가 %d 상자 있어요!' % boxes_of_crackers)
-  print('파티를 벌이기에 충분하네요!')
-  print('담요 한 장 가져 오세요.\n')
+def 치즈와_크래커(치즈_수, 크래커_상자):
 
+  print("치즈와 크래커 시작 ==============\n")
+  print(f'치즈가 {치즈_수}개 있어요!')
+  print(f'크래커가 {크래커_상자}상자 있어요!')
+  print(f'파티를 벌이기에 충분하네요!')
+  print(f'담요 한 장 가져 오세요.\n')
+  print('치즈와 크래커 끝 =================\n')
 
-print('함수에 그냥 숫자를 직접 줄 수 있습니다.')
-cheese_and_crackers(20, 30)
+print('\n')
+print('함수에 그냥 숫자를 직접 줄 수 있습니다.\n')
+치즈와_크래커(20, 30)
 
-print('스크립트의 변수를 쓸 수도 있고요.')
-amount_of_cheese = 10
-amount_of_crackers = 50
+print('스크립트의 변수를 쓸 수도 있고요.\n')
+치즈의_양 = 10
+크래커의_양 = 50
 
-cheese_and_crackers(amount_of_cheese, amount_of_crackers)
+치즈와_크래커(치즈의_양, 크래커의_양)
 
-print('안에서 계산을 해도 됩니다.')
-cheese_and_crackers(10 + 20, 5 + 6)
+print('안에서 계산을 해도 됩니다.\n')
+치즈와_크래커(10 + 20, 5 + 6)
 
-print('합쳐서 변수도 쓰고 계산도 할 수 있습니다.')
-cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 100)
+print('합쳐서 변수도 쓰고 계산도 할 수 있습니다.\n')
+치즈와_크래커(치즈의_양 + 100, 크래커의_양 + 1000)
