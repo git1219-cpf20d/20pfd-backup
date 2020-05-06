@@ -1,4 +1,4 @@
-# coding: utf-8
+cd# coding: utf-8
 # 참고문헌: http://learnpythonthehardway.org/python3/ex17.html
 # 입력 후 add, commit / Enter source code, add, and commit
 # 각 행 주석 입력 후 commit / Enter comment for each line and commit
@@ -11,27 +11,25 @@
 
 # -*- coding: utf-8 -*-
 
-from sys import argv
-from os.path import exists
+import sys
+import os
 
-script, from_file, to_file = argv
+script, src, dest = sys.argv
 
-print("%s에서 %s로 복사합니다" % (from_file, to_file))
+print(f"{src}에서 {dest}로 복사합니다.")
 
-# 이 두 줄은 한줄로도 쓸 수 있습니다. 어떻게 할까요?
-in_file = open(from_file, encoding="utf-8")
-indata = in_file.read()
+with open(src, encoding='utf-8') as input_file:
+  input_data = input_file.read()
+ # input_file 이 닫힘
 
-print("입력 파일은 %d 바이트 입니다" % len(indata))
+print(f"입력 파일은 {len(input_data)} 바이트 입니다.")
 
-print("출력 파일이 존재하나요? %r" % exists(to_file))
-print("준비되었습니다. 계속하려면 리턴 키를, 취소하려면 CTRL-C를 누르세요.")
+print(f"출력 파일이 있나요? {os.path.exists(dest)}")
+print(f"이제 준비가 되었습니다. 계속하려면 Enter를, 취소하려면 Ctrl+C를 누르세요.")
 input()
 
-out_file = open(to_file, 'w', encoding='utf-8')
-out_file.write(indata)
+with open(dest, 'wt', encoding='utf-8') as output_file:
+  output_file.write(input_data)
+# output_file 이 닫힘
 
-print("좋습니다. 모두 완료되었습니다.")
-
-out_file.close()
-in_file.close()
+print("좋습니다. 이제 완료되었습니다.")
