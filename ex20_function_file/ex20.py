@@ -35,7 +35,7 @@ with open(input_file, encoding='utf-8') as current_file:
   print_all(current_file)
 
   print('\n')
-  print("이번에는 테이프처럼 되감아 봅시다.")
+  print("이미 txt 파일을 한 번 읽었으므로,\n이번에는 테이프처럼 되감아 위치정보를 초기화 시켜 봅시다.")
 
   rewind(current_file)
 
@@ -51,3 +51,22 @@ with open(input_file, encoding='utf-8') as current_file:
   
   current_line = current_line + 1
   print_a_line(current_line, current_file)
+
+  rewind(current_file)
+
+  print('\n')
+  print("이번엔 네 줄을 출력해 봅시다.")
+
+  print('\n')
+  current_line = 1
+  print_a_line(current_line, current_file)
+
+  current_line = current_line + 1
+  print_a_line(current_line, current_file)
+  
+  current_line = current_line + 1
+  print_a_line(current_line, current_file)
+
+  current_line = current_line + 1
+  print_a_line(current_line, current_file)
+  print('\n')
