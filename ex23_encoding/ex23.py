@@ -9,3 +9,26 @@
 # print 'abc', abc, 'def' -> print('abc %s def' % (abc))
 # print 'abc', -> print('abc', end=" ")
 # 이 예제는 command-line 에서 실행시킬 것 / Please run this from the command-line
+
+
+import sys
+script, input_encoding, error = sys.argv
+
+def main(language_file, encoding, errors):
+  line = language_file.readline()
+
+  if line:
+    print_line(line, encoding, errors)
+    return main(language_file, encoding, errors)
+
+
+def print_line(line, encoding, errors):
+  next_lang = line.strip()
+  raw_bytes = next_lang.encode(encoding, errors=errors)
+  cooked_string = raw_bytes.decode(encoding, errors=error)
+
+  print(raw_bytes, "<===>", cooked_string)
+
+
+with open("languages.txt") as languages:
+  main(languages, input_encoding, error)
