@@ -7,3 +7,43 @@
 # Please write a program evaluating and printing each logical operations
 # ex: print("not False = %g " % (not False))
 # 오류노트 에 각자 오류노트 작성 / Please use your error-note
+
+
+print('01.01 not False =', (not False))
+print('01.02 not True =', (not True))
+print()
+
+print('02.01 True or False =', (True or False))
+print('02.02 True or True =', (True or True))
+print('02.03 False or True =', (False or True))
+print('02.04 False or False =', (False or False))
+print()
+
+print('03.01 True and False =', (True or False))
+print('03.02 True and True =', (True or True))
+print('03.03 False and True =', (False or True))
+print('03.04 False and False =', (False or False))
+print()
+
+print('04.01 not(True or False) =', (not(True or False)))
+print('04.02 not(True or True) =', (not(True or True)))
+print('04.03 not(False or True) =', (not(False or True)))
+print('04.04 not(False or False) =', (not(False or False)))
+print()
+
+print('05.01 not(True or False) =', (not(True or False)))
+print('05.02 not(True or True) =', (not(True or True)))
+print('05.03 not(False or True) =', (not(False or True)))
+print('05.04 not(False or False) =', (not(False or False)))
+print()
+
+print('06.01 (1 != 0) =', (1 != 0))
+print('06.02 (1 != 1) =', (1 != 1))
+print('06.03 (0 != 1) =', (0 != 1))
+print('06.04 (0 != 0) =', (0 != 0))
+print()
+
+print('07.01 (1 != 0) =', (1 == 0))
+print('07.02 (1 != 1) =', (1 == 1))
+print('07.03 (0 != 0) =', (0 == 1))
+print('07.04 (0 != 0) =', (0 == 0))
