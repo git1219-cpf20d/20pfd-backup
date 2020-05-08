@@ -12,7 +12,7 @@
 import ex25
 
 sentence = "All good things come to those who wait."
-words = ex25.brak_words(sentence)
+words = ex25.break_words(sentence)
 print("words = %s" % words)
 sorted_words = ex25.sort_words(words)
 print("sorted_words = %s" % sorted_words)
