@@ -100,7 +100,7 @@ print("How old are you?", end=' ')
 age = input()
 print("How tall are you?", end=' ')
 height = input() #<-input 행 추가
-print("How much do you weigh?", end=' ') #weight 오타 수정과 )추가
+print("How much do you weight?", end=' ') #weight 오타 수정과 )추가
 weight = input()
 
 print(f"So, you're {age} old, {height} tall and {weight} heavy.")
