@@ -1,2 +1,11 @@
 ﻿# 이 파일에는 각자 경험했던 오류를 기록 / In this file, record errors and mistakes
 # 다음 연습으로 넘어 가기 전 한번씩 읽어 볼 것 / Read this before starting next exercise
+
+
+*error는 아니지만 유용한 명령어 모음
+git log --oneline --graph --all
+git stash
+git pull --rebase -> 원격저장소 commit 반영 후 지역저장소의 commit 추가
+git stash pop
+
+git push -f 대신 위 방법으로
