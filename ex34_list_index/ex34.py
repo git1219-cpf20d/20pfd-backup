@@ -9,3 +9,21 @@
 # print 'abc', -> print('abc', end=" ")
 # raw_input('abc') -> input('abc')
 # 오류노트 에 각자 오류노트 작성 / Please use your error-note
+
+import random
+
+animals = ['곰', '비단뱀', '공작', '캥거루', '고래', '오리너구리']
+ordinals = ['첫',        '두',     '세',     '네', '다섯', '여섯']
+
+print(f' 1) {1} 번에 있는 동물은 {animals[1]} 이다.')
+print(f' 2) {ordinals[2]} 번째 동물은 {animals[2]} 이다.')
+print(f' 3) {ordinals[0]} 번째 동물은 {animals[0]} 이다.')
+print(f' 4) {3} 번에 있는 동물은 {animals[3]} 이다.')
+print(f' 5) {ordinals[4]} 번째 동물은 {animals[4]} 이다.')
+print(f' 6) {2} 번에 있는 동물은 {animals[2]} 이다.')
+print(f' 7) {ordinals[5]} 번째 동물은 {animals[5]} 이다.')
+print(f' 8) {4} 번에 있는 동물은 {animals[4]} 이다.')
+
+for i in range(9, 9+6):
+  k = random.randint(0, 5)
+  print(f'{i:2d}) {ordinals[k]} 번째 동물은 {animals[k]} 이다.')
