@@ -1,4 +1,4 @@
-cd# coding: utf-8
+# coding: utf-8
 # 참고문헌: http://learnpythonthehardway.org/python3/ex17.html
 # 입력 후 add, commit / Enter source code, add, and commit
 # 각 행 주석 입력 후 commit / Enter comment for each line and commit
