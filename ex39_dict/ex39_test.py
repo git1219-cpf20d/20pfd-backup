@@ -9,3 +9,11 @@
 # print 'abc', -> print('abc', end=" ")
 # raw_input('abc') -> input('abc')
 # 오류노트 에 각자 오류노트 작성 / Please use your error-note
+
+things = ['a', 'b', 'c', 'd']
+# 또는 Or
+# things = list('abcd')
+print('print(things[1]): ')
+print(things[1])
+things[1] = 'z'
+print('print(things[1]): ')
