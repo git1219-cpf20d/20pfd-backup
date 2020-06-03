@@ -8,7 +8,7 @@
 # print 'abc', abc, 'def' -> print('abc %s def' % (abc))
 # print 'abc', -> print('abc', end=" ")
 
-formatter = "{} {} {} {}"
+formatter = "{} f{} f{} f{}"
 formatter2 = "%r %r %r %r"
 
 print(formatter.format(1, 2, 3, 4))
@@ -23,3 +23,4 @@ print(formatter.format(
 ))
 
 print(formatter2 % (5, 6, 7, 8))
+print(formatter.format(1, "one", 2, "two"))
