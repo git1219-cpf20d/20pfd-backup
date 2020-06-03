@@ -26,7 +26,7 @@ print(f"입력 파일은 {len(input_data)} 바이트 입니다.")
 
 print(f"출력 파일이 있나요? {os.path.exists(dest)}")
 print(f"이제 준비가 되었습니다. 계속하려면 Enter를, 취소하려면 Ctrl+C를 누르세요.")
-input()
+input("> ")
 
 with open(dest, 'wt', encoding='utf-8') as output_file:
   output_file.write(input_data)
