@@ -24,13 +24,13 @@ def sort_words(words):
 def print_first_word(words):
   """첫 단어를 꺼내서 출력합니다."""
   word = words.pop(0)
-  print (word)
+  print(word)
 
 
 def print_last_word(words):
   """마지막 단어를 꺼내서 출력합니다."""
   word = words.pop(-1)
-  print (word)
+  print(word)
 
 
 def sort_sentence(sentence):
