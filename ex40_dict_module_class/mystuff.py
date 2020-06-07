@@ -9,3 +9,10 @@
 # print 'abc', -> print('abc', end=" ")
 # raw_input('abc') -> input('abc')
 # 오류노트 에 각자 오류노트 작성 / Please use your error-note
+
+def apple():
+  print("I AM APPLES!")
+
+
+
+tangerine = "Living reflection of a dream"
