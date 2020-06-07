@@ -17,3 +17,32 @@ print('print(things[1]): ')
 print(things[1])
 things[1] = 'z'
 print('print(things[1]): ')
+print(things[1])
+print('print(things): ')
+print(things)
+
+stuff = {'name': 'Zed', 'age': 36, 'height': 6 * 12 + 2}
+print("print(stuff['name']): ")
+print(stuff['name'])
+print("print(stuff['age']): ")
+print(stuff['age'])
+print("print(stuff['height']): ")
+print(stuff['height'])
+stuff['city'] = 'San Francisco'
+print("print(stuff['city']): ")
+print(stuff['city'])
+
+stuff[1] = 'Wow'
+stuff[2] = 'Neato'
+print('print(stuff[1]): ')
+print(stuff[1])
+print('print(stuff[2]): ')
+print(stuff[2])
+print('print(stuff): ')
+print(stuff)
+
+del stuff['city']
+del stuff[1]
+del stuff[2]
+print('print(stuff): ')
+print(stuff)
