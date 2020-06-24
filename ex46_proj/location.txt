@@ -1,0 +1,2 @@
+/opt/virtualenvs/python3/bin/python
+/opt/virtualenvs/python3/bin/pip
