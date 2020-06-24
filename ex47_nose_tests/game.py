@@ -8,3 +8,16 @@
 # print 'abc', -> print('abc', end=" ")
 # raw_input('abc') -> input('abc')
 # 오류노트 에 각자 오류노트 작성 / Please use your error-note
+
+class room(object):
+
+    def __init__(self, 이름, 설명):
+        self.이름 = 이름
+        self.설명 = 설명
+        self.길_모음 = {}
+
+    def 이동(self, 방향):
+        return self.길_모음.get(방향, None)
+
+    def 길_추가(self, 길_모음):
+        self.길_모음.update(길_모음)

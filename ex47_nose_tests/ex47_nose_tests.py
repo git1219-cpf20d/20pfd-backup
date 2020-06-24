@@ -9,3 +9,21 @@
 # print 'abc', -> print('abc', end=" ")
 # raw_input('abc') -> input('abc')
 # 오류노트 에 각자 오류노트 작성 / Please use your error-note
+pwd
+
+rm ex47_nose_tests.py
+rm game.py
+git add
+git commit -m "ex47 : removed prior files"
+
+cp -r ../ex46_proj/skeleton/ ./ex47/
+
+git add ./ex47/
+git commit -m "copied from ex46"
+pushd ex47
+
+git mv NAME/ ex47/
+git commit -m "renamed folder NAME/ to ex47/"
+
+git mv tests/NAME_test.py tests/ex47_test.py
+git commit -m "renamed test file"
