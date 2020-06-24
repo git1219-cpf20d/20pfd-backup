@@ -1,2 +1,2 @@
-/opt/virtualenvs/python3/bin/python
-/opt/virtualenvs/python3/bin/pip
+/home/runner/.venvs/lpthw/bin/python
+/home/runner/.venvs/lpthw/bin/pip
