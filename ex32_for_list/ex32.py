@@ -30,11 +30,15 @@ for 잔돈 in 잔돈목록:
 # list를 만들 수도 있는데, 먼저 빈 것으로 시작합니다.
 원소목록 = []
 
+원소목록.append(1)
+print(원소목록)
 # 그리고 0에서 5까지 세는 range 함수를 사용합니다.
 for i in range(0, 5+1):
   print(f"list에 숫자 {i}를 더합니다.")
   # append는 list가 알아듣는 함수입니다.
   원소목록.append(i)
+  
+print(i)
 
 # 이것도 출력할 수 있습니다.
 for i in 원소목록:
